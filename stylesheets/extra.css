@@ -1,0 +1,158 @@
+body {
+  background-color: #fff;
+  background-image: url(../gfx/flowers.png);
+  background-repeat: no-repeat;
+  background-position: 50% 11%;
+  background-size: 1050px;
+}
+
+h1, h2 {
+	font-family: "Chopin Script", cursive;
+	font-weight: normal;
+	text-transform: none;
+	line-height: 1.4;
+}
+h3, h4, h5, h6 {
+	font-family: "Great Vibes", cursive;
+	font-weight: normal;
+	text-transform: none;
+}
+h3 {
+	font-size: 2.2em;
+}
+
+body {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
+.at {
+	color: #fff;
+	position: relative;
+}
+.at:after {
+	content: "@";
+	color: #666;
+	display: block;
+	position: absolute;
+	left: 3px;
+	top: -1px;
+}
+
+ul li {
+	list-style: none;
+	text-align: justify;
+	margin-bottom: 35px;
+}
+ul.agenda li {
+	text-align: left;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	padding-left: 55px;
+	position: relative;
+}
+ul li span,
+ul li strong,
+ul li em {
+	text-transform: uppercase;
+}
+ul.agenda li.is-happening {
+	font-weight: bold;
+}
+ul.agenda li.is-happening:before {
+	display: block;
+	content: "♥";
+	position: absolute;
+	left: -17px;
+}
+ul.agenda li.has-happened {
+	color: #CDCDCD;
+}
+ul.agenda li.has-happened * {
+	color: inherit;
+}
+ul li.header {
+	font-size: 1.8em;
+	padding-top: 15px;
+	font-family: "Great Vibes", cursive;
+	text-transform: none !important;
+	padding-left: 0;
+	font-weight: bold;
+}
+ul.agenda li.header strong {
+	text-transform: none !important;
+}
+li.header:before {
+	content: "~";
+	display: inline;
+	padding-right: 5px;
+}
+li.header:after {
+	content: "~";
+	display: inline;
+	padding-left: 5px;
+}
+ul.agenda li time {
+	position: absolute;
+	left: 0;
+}
+h2, h3, h4, .header  {
+	text-align: center !important;
+}
+h2 span {
+	font-size: .4em;
+	clear: both;
+	color: #666;
+	display: block;
+}
+
+.framed {
+	border-style: double;
+	border-color: #9A9189;
+	border-width: 6px;
+	margin-bottom: 35px;
+	padding: 40px;
+	background-color: #fff;
+}
+
+@media (max-width: 500px) {
+	.framed {
+		border-width: 1px 0 0 0;
+		margin-bottom: 10px;
+		padding: 40px 30px 30px;
+  	}
+  	body {
+		background-image: none;
+  	}
+  	h2 {
+		line-height: 1;
+  		position: relative;
+  		left: -10px;
+  	}
+  	h2 span {
+  		position: relative;
+		top: 13px;
+  		left: 10px;
+  	}
+}
+
+@font-face {
+font-family: "Chopin Script";
+	src: url("/fonts/ChopinScript.otf") format("opentype");
+}
+em {
+	color: #666;
+	font-size: .8em;
+	text-transform: uppercase;
+}
+a {
+	color: #9A9189;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+a:hover, a:focus {
+	color: #625346;
+}
+p {
+	text-align: justify;
+}
