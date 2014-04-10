@@ -122,6 +122,9 @@ h2 span {
 	padding: 40px;
 	background-color: #FDFDFD;
 }
+.clone {
+	display: none;	
+}
 
 @media (max-width: 500px) {
 	.framed {
@@ -130,19 +133,20 @@ h2 span {
 		padding: 40px 30px;
 		background-color: #fff;
   	}
-  	.framed.pinned {
-  		background: Tomato;
+  	.card.pinned {
+		visibility: hidden;
+  	}
+  	.clone.pinned {
+		display: block !important;
+  	}
+  	.clone {
   		position: fixed;
   		top: 0;
   		z-index: -1;
   	}
-  	#title {
-  		position: fixed;
-  		top: 0;
-  		z-index: -1;
-  	}
-  	#content {
-  		margin-top: 286px;
+  	.clone.bottom {
+		bottom: 0;
+  		top: auto;
   	}
   	body {
 		background-image: none;
