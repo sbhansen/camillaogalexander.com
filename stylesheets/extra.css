@@ -161,7 +161,7 @@ h2 span {
 
 @font-face {
 font-family: "Chopin Script";
-	src: url("/fonts/ChopinScript.otf") format("opentype");
+	src: url("../fonts/ChopinScript.otf") format("opentype");
 }
 em {
 	color: #666;
