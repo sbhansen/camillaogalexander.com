@@ -23,6 +23,7 @@ h3 {
 
 body {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	overflow: hidden;
 }
 
 
@@ -55,6 +56,7 @@ ul li span,
 ul li strong,
 ul li em {
 	text-transform: uppercase;
+	text-align: left;
 }
 ul.agenda li.is-happening {
 	font-weight: bold;
@@ -125,24 +127,58 @@ h2 span {
 .clone {
 	display: none;	
 }
+#scrollWrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+#content {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
 
 @media (max-width: 500px) {
 	.framed {
-		border-width: 1px 0 0 0;
+		border-width: 0;
 		margin-bottom: 0;
 		padding: 40px 30px;
-		background-color: #fff;
   	}
   	.card.pinned {
 		visibility: hidden;
   	}
+  	.card {
+		background-color: #fff;
+  		border-top: 1px solid #9A9189;
+  	}
+  	.card:first-child {
+  		margin-top: -1px;
+  	}
+  	.card:last-child {
+  		border-bottom: 1px solid #9A9189;
+  		margin-bottom: -1px;
+  	}
   	.clone.pinned {
 		display: block !important;
+  		border-color: #fff;
   	}
   	.clone {
+		background-color: #fff;
   		position: fixed;
   		top: 0;
   		z-index: -1;
+  	}
+  	.clone:last-child{
+		overflow: hidden;
+  		text-indent: -99999px;
+  		background-color: #dcdcdc;
+  		border: none;
+  		height: 9999px;
+  	}
+  	.card:last-child {
+		visibility: visible !important;
   	}
   	.clone.bottom {
 		bottom: 0;
@@ -150,6 +186,7 @@ h2 span {
   	}
   	body {
 		background-image: none;
+  		background-color: #dcdcdc;
   	}
   	h2 {
 		line-height: 1;
