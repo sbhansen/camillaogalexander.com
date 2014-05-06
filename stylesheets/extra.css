@@ -124,6 +124,11 @@ h2 span {
 	padding: 40px;
 	background-color: #FDFDFD;
 }
+.framed img {
+	border: 1px solid #222;
+	padding: 3px;
+	margin-bottom: 1.25em;
+}
 .clone {
 	display: none;	
 }
@@ -139,25 +144,40 @@ h2 span {
   	}
   	#title {
 		position: fixed;
-  		top: 0;
-  		width: 100%;
+		top: 0;
+		width: 100%;
+		background-image: url(/gfx/camillaogalexander.jpg);
+		background-position: 50% 65%;
+		color: #fff;
+		padding-top: 230px;
+  	}
+  	#content {
+  		z-index: 2;
+  		background: #fff;
   	}
   	.framed:fist-child {
 		margin-top: 286px;
   	}
+  	.framed img {
+		display: none;
+	}
   	body {
 		background-image: none;
   		position: relative;
   	}
   	h2 {
 		line-height: 1;
-  		position: relative;
-  		left: -10px;
+		position: relative;
+		left: -10px;
+		color: #FFF;
+		text-shadow: 0 0 4px #222;
+		font-size: 72px;
   	}
   	h2 span {
   		position: relative;
 		top: 13px;
   		left: 10px;
+  		color: #fff;
   	}
 }
 
